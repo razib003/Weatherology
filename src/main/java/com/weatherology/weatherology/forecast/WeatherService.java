@@ -14,6 +14,7 @@ public class WeatherService {
 		this.weatherProviders = new ArrayList<WeatherProviderAdapter>();
 
 		this.weatherProviders.add(new OpenWeatherMapAdapter(new OpenWeatherMap(weather.getZip())));
+		this.weatherProviders.add(new WunderGroundAdapter(new WunderGround(weather.getZip())));
 		//add second weather provider
 		//add third weather provider
 		
